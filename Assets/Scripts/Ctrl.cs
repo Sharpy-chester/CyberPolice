@@ -5,13 +5,13 @@ using UnityEngine.Animations;
 
 public class Ctrl : MonoBehaviour {
 
-    Animator animator;
+    //Animator animator;
 
     public float speed = 5f;
 
 
     void Start () {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
 	}
 	
 
@@ -25,8 +25,8 @@ public class Ctrl : MonoBehaviour {
         {
             transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * speed * Time.deltaTime, 0f));
         }
-        animator.SetFloat("X", Input.GetAxisRaw("Horizontal"));
-        animator.SetFloat("Y", Input.GetAxisRaw("Vertical"));
+        //animator.SetFloat("X", Input.GetAxisRaw("Horizontal"));
+        //animator.SetFloat("Y", Input.GetAxisRaw("Vertical"));
     }
 
 
